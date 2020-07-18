@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          token: ${{ secrets.CONTENT_REPO_PAT }}
           submodules: recursive
       - name: Build And Deploy
         id: builddeploy
