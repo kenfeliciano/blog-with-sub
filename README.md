@@ -1,3 +1,5 @@
+![Azure Static Web Apps CI/CD](https://github.com/kenfeliciano/blog-with-sub/workflows/Azure%20Static%20Web%20Apps%20CI/CD/badge.svg)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
