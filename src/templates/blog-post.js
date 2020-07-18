@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { rhythm, scale } from '../utils/typography'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -13,10 +13,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
+      <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
       <article>
         <header>
           <h1
@@ -60,14 +57,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug} rel='prev'>
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug} rel='next'>
                 {next.frontmatter.title} →
               </Link>
             )}
